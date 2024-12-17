@@ -35,6 +35,11 @@
       }
     }
 
+    .contact-btn > a > img {
+      filter: brightness(0) invert(1);
+    }
+
+
     button:disabled, .button:disabled {
       filter: brightness(0.8);
       cursor: not-allowed;
@@ -47,6 +52,10 @@
   
 
     &.light {
+      h1, h2 {
+        color: #0052ad;
+      }
+
       body {
         transition: 0.5s;
         background-color: #f5f5f5;
@@ -56,7 +65,7 @@
       .logo {
         color: #000;
       }
-  
+
       .header-section {
         transition: 0.5s;
         background-color: #f5f5f500;
@@ -64,6 +73,12 @@
         a {
           transition: 0.5s;
           color: black;
+
+ 
+        }
+
+        a.resume-btn {
+          color: #f5f5f5;
         }
         
         .menu, .menu::before, .menu::after {
@@ -76,8 +91,19 @@
       }
   
       .about-text {
+        color: #000;
         background-color: #f5f5f500;
       }
+
+      .project {
+        background-color: #073c8be6;
+        
+        img, svg {
+          filter: brightness(0) invert(1);
+        }
+
+      }
+   
     }
   }
   

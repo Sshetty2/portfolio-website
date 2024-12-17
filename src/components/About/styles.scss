@@ -25,7 +25,7 @@
       display: inline-block;
       margin-bottom: 2rem;
       font-size: 3rem;
-      margin-top: 0rem;
+      margin-top: 0;
       color: var(--blue);
     }
   
@@ -71,7 +71,7 @@
         animation-delay: 1000ms;
       }
   
-    @media only screen and (max-width: 480px) {
+    @media only screen and (width <= 480px) {
       .about-image {
         max-width: 100%;
         margin-top: 4rem;
@@ -89,7 +89,7 @@
       }
     }
   
-    @media (max-width: 960px) {
+    @media (width <= 960px) {
       display: block;
       text-align: center;
   

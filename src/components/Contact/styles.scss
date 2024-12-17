@@ -2,20 +2,32 @@
     margin-top: 10rem;
     padding: 0 2rem;
     margin-bottom: 10rem;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
       margin-bottom: 3rem;
       
       h2 {
         font-size: 4rem;
         margin-bottom: 1rem;
+        width: fit-content;
+        backdrop-filter: blur(3px);
       }
       
       p {
         color: var(--blue);
         font-weight: 500;
         line-height: 1.5;
+        width: fit-content;
+        backdrop-filter: blur(3px);
       }
     }
   
@@ -29,7 +41,7 @@
         display: inline-flex;
         align-items: center;
         padding: 1.6rem 2.8rem;
-        background-color: var(--blue);
+        background-color: var(--dark-blue);
         border-radius: 4px;
         transition: all 0.3s ease;
   
