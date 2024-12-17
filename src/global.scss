@@ -99,7 +99,7 @@
         background-color: #073c8be6;
         
         img, svg {
-          filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1)!important;
         }
 
       }

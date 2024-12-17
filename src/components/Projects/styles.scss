@@ -28,7 +28,7 @@
         
         &:hover {
           transform: translateY(-5px);
-          background-color: var(--purple);
+          background-color: #6c2eb7db;
         }
         
         header {
@@ -45,6 +45,7 @@
           }
           
           a > img {
+            filter: brightness(2.5);
             width: 5rem;
           }
         }
