@@ -1,7 +1,8 @@
-import { Container } from './styles';
 import githubIcon from '../../assets/github.svg';
 import externalLink from '../../assets/external-link.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
+
+import './styles.scss';
 
 const projects = [
   {
@@ -45,12 +46,12 @@ const Project = ({ projectLink, githubLink, title, description, tech }: ProjectP
 );
 
 const Projects = () => (
-  <Container id="project">
-    <h2>Projects</h2>
+  <div id="projects" className="projects-container">
+    <h2>Demo Projects</h2>
     <div className="projects">
       {projects.map(project => <Project key={project.title} {...project} />)}
     </div>
-  </Container>
+  </div>
 );
 
 export default Projects;

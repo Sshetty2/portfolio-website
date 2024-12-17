@@ -1,10 +1,10 @@
-import { Container } from './styles';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { NavHashLink, HashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 import { useState } from 'react';
 import Resume from '../../assets/sshetty_resume.pdf';
+import './styles.scss';
 
-export function Header ({ toggleTheme }: { toggleTheme: () => void }) {
+const HeaderSection = ({ toggleTheme }: { toggleTheme: () => void }) =>{
   const [isActive, setActive] = useState(false);
 
   function closeMenu () {
@@ -12,39 +12,38 @@ export function Header ({ toggleTheme }: { toggleTheme: () => void }) {
   }
 
   return (
-    <Container className="header-fixed">
+    <div className="header-section">
       <Router>
-        <HashLink smooth to="#home" className="logo">
-        </HashLink>
         <input
           onChange={toggleTheme}
-          className="container_toggle"
+          className="container-toggle"
           type="checkbox"
           id="switch"
           name="mode"
         />
         <label htmlFor="switch">Toggle</label>
         <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
+          <NavHashLink smooth to="#home" onClick={closeMenu}>
+            Home
+          </NavHashLink>
+          <NavHashLink smooth to="#projects" onClick={closeMenu}>
             Project
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a href={Resume} download className="button">
-            Resume
-          </a>
+          <a href={Resume} download className="resume-btn">Resume</a>
         </nav>
         <div
-          aria-expanded={isActive ? 'true' : 'false'}
+          aria-expanded={isActive}
           aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
           className={isActive ? 'menu active' : 'menu'}
-          onClick={() => {
-            setActive(!isActive);
-          }}
-        ></div>
+          onClick={() => setActive(!isActive)}
+        />
       </Router>
-    </Container>
+    </div>
   );
-}
+};
+
+export default HeaderSection;

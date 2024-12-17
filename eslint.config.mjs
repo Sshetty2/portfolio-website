@@ -39,13 +39,13 @@ export default [{
 }, ...compat.extends(
   'eslint:recommended',
   'plugin:@typescript-eslint/recommended',
-  'plugin:react/recommended'
+  'plugin:react/recommended',
 ), {
   plugins: {
     '@typescript-eslint': typescriptEslint,
     react               : reactEslint,
     'react-refresh'     : reactRefresh,
-    reactHooks          : reactHooksEslint
+    reactHooks          : reactHooksEslint,
   },
   languageOptions: {
     globals: {
