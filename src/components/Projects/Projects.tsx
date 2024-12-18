@@ -10,7 +10,7 @@ const projects = [
     // eslint-disable-next-line max-len
     description: 'A React application that visualizes emotional sentiments from Wikipedia articles using IBM Watson\'s Natural Language Understanding model. The application processes Wikipedia content through AWS Lambda functions to analyze emotional sentiment patterns and presents the data through interactive visualizations.',
     tech       : ['React', 'Typescript', 'MUI', 'IBM Watson', 'AWS Lambda', 'API Gateway', 'Wikipedia API'],
-    githubLink : 'https://https://github.com/Sshetty2/wiki-sentiment-analysis',
+    githubLink : 'https://github.com/Sshetty2/wiki-sentiment-analysis',
     projectLink: 'https://www.wiki-sentiment-analyzer.wiki/'
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     description: 'This React-based blotter app features an order entry form with validation for market and limit orders, real-time order tracking using AG Grid, and intuitive Buy/Sell color coding. Built with Redux for state management and Ant Design for a polished UI, the app supports responsive design, diverse order types, and advanced form controls, ensuring smooth user interaction and performance.',
     tech       : ['React', 'Typescript', 'Redux', 'Ant Design', 'AG Grid', 'SCSS'],
     githubLink : 'https://github.com/Sshetty2/demo-blotter-app',
-    projectLink: 'main.d1m98d5rusf0mr.amplifyapp.com/'
+    projectLink: 'https://main.d1m98d5rusf0mr.amplifyapp.com/'
   }
 ];
 
