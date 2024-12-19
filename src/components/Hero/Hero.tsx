@@ -1,6 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { NavHashLink } from 'react-router-hash-link';
 import linkedin from '../../assets/linkedin.svg';
 import githubIcon from '../../assets/github.svg';
 
