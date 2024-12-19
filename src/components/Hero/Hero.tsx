@@ -21,24 +21,25 @@ const Hero = () => (
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp" >
         <BrowserRouter>
-          <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
+          <a href="mailto:sachit.shetty@gmail.com" className="button">Contact</a>
         </BrowserRouter>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp">
-        <div className="social-media"><a
-          href="https://www.linkedin.com/in/sshetty2/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={linkedin} alt="Linkedin" />
-        </a>
-        <a
-          href="https://github.com/Sshetty2/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
+        <div className="social-media">
+          <a
+            href="https://www.linkedin.com/in/sshetty2/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedin} alt="Linkedin" />
+          </a>
+          <a
+            href="https://github.com/Sshetty2/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={githubIcon} alt="GitHub" />
+          </a>
         </div>
       </ScrollAnimation>
     </div>

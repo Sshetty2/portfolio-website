@@ -6,7 +6,7 @@ import './styles.scss';
 const HeroImage = () => (
   <div className="hero-image">
     <ScrollAnimation animateIn="fadeInRight">
-      <HeroImgSvg width={'115%'} height={'125%' } />
+      <HeroImgSvg width={'115%'} height={'115%' } />
     </ScrollAnimation>
   </div>
 );

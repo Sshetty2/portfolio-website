@@ -45,7 +45,7 @@ export default [{
     '@typescript-eslint': typescriptEslint,
     react               : reactEslint,
     'react-refresh'     : reactRefresh,
-    reactHooks          : reactHooksEslint,
+    reactHooks          : reactHooksEslint
   },
   languageOptions: {
     globals: {
@@ -332,31 +332,23 @@ export default [{
     'no-unneeded-ternary'             : 2,
     'no-whitespace-before-property'   : 2,
     'nonblock-statement-body-position': ['error', 'below'],
-
-    'object-curly-newline': ['error', {
-      consistent: true
-    }],
-
-    'object-property-newline': 2,
-
-    'one-var': ['error', {
+    'object-property-newline'         : 2,
+    'object-curly-newline'            : ['error', { multiline: true }],
+    'object-curly-spacing'            : ['error', 'always'],
+    'one-var'                         : ['error', {
       var  : 'always',
       const: 'never',
       let  : 'never'
     }],
-
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment'         : ['error', 'always'],
-
-    'operator-linebreak': ['error', 'none', {
+    'operator-linebreak'          : ['error', 'none', {
       overrides: {
         '&&': 'before',
         '||': 'before'
       }
     }],
-
-    'padded-blocks': ['error', 'never'],
-
+    'padded-blocks'                  : ['error', 'never'],
     'padding-line-between-statements': ['error', {
       blankLine: 'always',
       prev     : '*',
@@ -390,25 +382,21 @@ export default [{
       prev     : 'import',
       next     : 'import'
     }],
-
     'prefer-object-spread': 0,
     'quote-props'         : ['error', 'as-needed'],
     quotes                : ['error', 'single'],
     semi                  : ['error', 'always'],
-
-    'semi-spacing': ['error', {
+    'semi-spacing'        : ['error', {
       before: false,
       after : true
     }],
-
     'semi-style'                 : ['error', 'last'],
     'sort-keys'                  : 0,
     'sort-vars'                  : 0,
     'space-before-blocks'        : ['error', 'always'],
     'space-before-function-paren': ['error', 'always'],
     'space-in-parens'            : ['error', 'never'],
-
-    'space-infix-ops': ['error', {
+    'space-infix-ops'            : ['error', {
       int32Hint: false
     }],
 
@@ -487,7 +475,6 @@ export default [{
     '@typescript-eslint/type-annotation-spacing': 'off',
     curly                                       : ['error', 'all'],
     'no-continue'                               : 'off',
-    'no-warning-comments'                       : 'off',
-    'object-curly-spacing'                      : ['error', 'always']
+    'no-warning-comments'                       : 'off'
   }
 }];
