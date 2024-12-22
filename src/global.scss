@@ -1,149 +1,153 @@
 :root {
-    --purple: #6c2eb7;
-    --blue: #43a5e7;
-    --dark-blue: #185abc;
+  --purple: #6c2eb7;
+  --blue: #43a5e7;
+  --dark-blue: #185abc;
 
-    scroll-padding-top: 10rem;
-  
-    body {
-      font-size: 1.6rem;
-        -webkit-font-smoothing: antialiased;
-      background-color: #000;
-      color: #FFFF;
-    }
-    
-    body, input, textarea, button {
-      font-family: 'Red Hat Display', sans-serif;
-      font-weight: 400;
-    }
-    
-    a {
-      text-decoration: none;
-    }
+  scroll-padding-top: 10rem;
 
-    button, .button {
-      border: none;
-      cursor: pointer;
-      background-color: var(--dark-blue);
-      color: #FFFF;
-      border-radius: 1rem;
-      font-weight: 500;
-      transition: filter 0.25s;
-      
-      &:hover {
-        filter: brightness(0.8);
-      }
-    }
-
-    .contact-btn > a > img {
-      filter: brightness(0) invert(1);
-    }
-
-
-    button:disabled, .button:disabled {
-      filter: brightness(0.8);
-      cursor: not-allowed;
-    }
-      
-    .logo {
-      font-size: 3rem;
-      color: #FFFF;
-    }
-  
-
-    &.light {
-      h1, h2 {
-        color: #0052ad;
-      }
-
-      body {
-        transition: 0.5s;
-        background-color: #f5f5f5;
-        color: #000;
-      }
-  
-      .logo {
-        color: #000;
-      }
-
-      .header-section {
-        transition: 0.5s;
-        background-color: #f5f5f500;
-        
-        a {
-          transition: 0.5s;
-          color: black;
-
- 
-        }
-
-        a.resume-btn {
-          color: #f5f5f5;
-        }
-        
-        .menu, .menu::before, .menu::after {
-          background-color: #000;
-        }
-        
-        .menu.active {
-          background-color: rgb(255 255 255 / 0%);
-        }
-      }
-  
-      .about-text {
-        color: #000;
-        background-color: #f5f5f500;
-      }
-
-      .project {
-        background-color: #073c8be6;
-        
-        img, svg {
-          filter: brightness(0) invert(1)!important;
-        }
-
-      }
-   
-    }
+  body {
+    background-color: #000;
+    color: #ffff;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
   }
-  
-  ul, li {
+
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+  }
+
+  a {
     text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  .main-container {
-    position: relative;
-    z-index: 0;
-    padding: 0 10rem;
-    overflow-x: hidden;
-  
-    #tsparticles {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-  
-    @media (width <= 740px) {
-      padding: 0 4rem;
-    }
-  
-    @media (width <= 360px) {
-      padding: 0 2rem;
+
+  button,
+  .button {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 1rem;
+    color: #FFFF;
+    cursor: pointer;
+    font-weight: 500;
+    transition: filter 0.25s;
+
+    &:hover {
+      filter: brightness(0.8);
     }
   }
+
+  .contact-btn > a > img {
+    filter: brightness(0) invert(1);
+  }
+
+  button:disabled,
+  .button:disabled {
+    cursor: not-allowed;
+    filter: brightness(0.8);
+  }
+
+  .logo {
+    color: #FFFF;
+    font-size: 3rem;
+  }
+
+  &.light {
+    h1,
+    h2 {
+      color: #0052ad;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #000;
+      transition: 0.5s;
+    }
+
+    .logo {
+      color: #000;
+    }
+
+    .header-section {
+      background-color: #f5f5f500;
+      transition: 0.5s;
+
+      a {
+        color: black;
+        transition: 0.5s;
+      }
+
+      a.resume-btn {
+        color: #f5f5f5;
+      }
+
+      .menu,
+      .menu::before,
+      .menu::after {
+        background-color: #000;
+      }
+
+      .menu.active {
+        background-color: rgb(255 255 255 / 0%);
+      }
+    }
+
+    .about-text {
+      background-color: #f5f5f500;
+      color: #000;
+    }
+
+    .project {
+      background-color: #073c8be6;
+
+      img,
+      svg {
+        filter: brightness(0) invert(1) !important;
+      }
+    }
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  overflow-x: hidden;
+  padding: 0 10rem;
+  position: relative;
+  z-index: 0;
+
+  #tsparticles {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @media (width <= 740px) {
+    padding: 0 4rem;
+  }
+
+  @media (width <= 360px) {
+    padding: 0 2rem;
+  }
+}

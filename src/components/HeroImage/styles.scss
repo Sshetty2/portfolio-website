@@ -1,14 +1,14 @@
 .hero-image {
-    flex: 1;
     display: flex;
+    flex: 1;
     justify-content: center;
-    margin-top: 3rem;
     margin-right: 5rem;
+    margin-top: 3rem;
 
     svg {
         max-width: 500px;
     }
-    
+
     @media (width <= 960px) {
         margin-top: 15%;
     }
@@ -20,4 +20,4 @@
     @media (width <= 480px) {
         margin-top: 45%;
     }
-  }
+}

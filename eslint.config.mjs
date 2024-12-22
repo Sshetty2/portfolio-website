@@ -34,7 +34,8 @@ export default [{
     '**/postcss.config.*',
     '**/tailwind.config.*',
     '**/craco.config.*',
-    '**/jsconfig.json'
+    '**/jsconfig.json',
+    '**/vite-env.d.ts'
   ]
 }, ...compat.extends(
   'eslint:recommended',
@@ -78,11 +79,7 @@ export default [{
     }
   },
 
-  settings: {
-    react: {
-      version: 'detect'
-    }
-  },
+  settings: { react: { version: 'detect' } },
 
   rules: {
     'getter-return'            : 2,
@@ -242,9 +239,7 @@ export default [{
     'id-match'                : 0,
     'implicit-arrow-linebreak': ['error', 'beside'],
 
-    indent: ['error', 2, {
-      SwitchCase: 1
-    }],
+    indent: ['error', 2, { SwitchCase: 1 }],
 
     'jsx-quotes': ['error', 'prefer-double'],
 
@@ -293,9 +288,7 @@ export default [{
     'max-params'                 : ['error', 3],
     'max-statements'             : ['warn', 20],
 
-    'max-statements-per-line': ['error', {
-      max: 1
-    }],
+    'max-statements-per-line': ['error', { max: 1 }],
 
     'multiline-ternary': ['error', 'never'],
 
@@ -396,9 +389,7 @@ export default [{
     'space-before-blocks'        : ['error', 'always'],
     'space-before-function-paren': ['error', 'always'],
     'space-in-parens'            : ['error', 'never'],
-    'space-infix-ops'            : ['error', {
-      int32Hint: false
-    }],
+    'space-infix-ops'            : ['error', { int32Hint: false }],
 
     'space-unary-ops': 2,
     'spaced-comment' : ['error', 'always'],
@@ -423,9 +414,7 @@ export default [{
     'generator-star-spacing': ['error', 'after'],
     'no-class-assign'       : 2,
 
-    'no-confusing-arrow': ['error', {
-      allowParens: true
-    }],
+    'no-confusing-arrow': ['error', { allowParens: true }],
 
     'no-const-assign'                     : 2,
     'no-dupe-class-members'               : 2,
