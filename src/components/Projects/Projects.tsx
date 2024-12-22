@@ -20,6 +20,14 @@ const projects = [
     tech       : ['React', 'Typescript', 'Redux', 'Ant Design', 'AG Grid', 'SCSS'],
     githubLink : 'https://github.com/Sshetty2/demo-blotter-app',
     projectLink: 'https://main.d1m98d5rusf0mr.amplifyapp.com/'
+  },
+  {
+    title      : 'Meetup Batch Event Set Tool',
+    // eslint-disable-next-line max-len
+    description: 'A Chrome extension that enhances Meetup.com functionality by enabling users to schedule multiple events to Google Calendar in bulk. Features include group autocomplete search, date range selection, and automated event scheduling. Built with React and Redux for state management, the extension integrates with both Meetup and Google Calendar APIs through OAuth2 authentication, providing a seamless experience for batch event management.',
+    tech       : ['React', 'TypeScript', 'Redux', 'Material-UI', 'Chrome Extension API', 'OAuth2', 'GraphQL'],
+    githubLink : 'https://github.com/Sshetty2/meetup-batch-event-set',
+    projectLink: 'https://chromewebstore.google.com/detail/meetup-batch-event-set-to/cabfodbfjmgloaallchcnnkgcfpnobem'
   }
 ];
 

@@ -27,7 +27,7 @@ const HeaderSection = ({ toggleTheme }: { toggleTheme: () => void }) =>{
             Home
           </NavHashLink>
           <NavHashLink smooth to="#projects" onClick={closeMenu}>
-            Project
+            Projects
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
