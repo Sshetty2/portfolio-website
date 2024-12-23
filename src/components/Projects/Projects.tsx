@@ -28,6 +28,14 @@ const projects = [
     tech       : ['React', 'TypeScript', 'Redux', 'Material-UI', 'Chrome Extension API', 'OAuth2', 'GraphQL'],
     githubLink : 'https://github.com/Sshetty2/meetup-batch-event-set',
     projectLink: 'https://chromewebstore.google.com/detail/meetup-batch-event-set-to/cabfodbfjmgloaallchcnnkgcfpnobem'
+  },
+  {
+    title      : 'WebTrader - Stock Trading Simulator',
+    // eslint-disable-next-line max-len
+    description: 'A full-stack web application that simulates stock market trading with virtual currency. Users can buy/sell stocks, check real-time prices, view their trade history, and manage their virtual portfolio. Features include user authentication, virtual fund deposits, and transaction history tracking. Built with Flask for the backend and Bootstrap for responsive frontend design, providing a realistic trading experience without financial risk.',
+    tech       : ['Python', 'Flask', 'HTML/CSS', 'Bootstrap', 'SQLite', 'Gunicorn', 'Stock Market APIs'],
+    githubLink : 'https://github.com/Sshetty2/webtrader',
+    projectLink: 'https://webtrader-9ap8.onrender.com'
   }
 ];
 
