@@ -1,17 +1,17 @@
 .hero-container {
-    background: rgb(218 185 185 / 0%);
-    display: flex;
-    gap: 8rem;
-    justify-content: space-between;
-    padding-top: 10%;
+  background: rgb(218 185 185 / 0%);
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+  padding-top: 10%;
   
-    .hero-text {
-      flex: 1;
-      padding-left: 5rem;
+  .hero-text {
+    flex: 1;
+    padding-left: 5rem;
 
-      p {
-        font-size: 1.8rem;
-      }
+    p {
+      font-size: 1.8rem;
+    }
 
     h1 {
       backdrop-filter: blur(3px);
@@ -19,67 +19,67 @@
       width: fit-content;
     }
   
-      h3 {
-        color: var(--blue);
-        margin: 1rem 0;
-      }
-  
-      .small-resume {
-        margin-bottom: 5rem;
-      }
+    h3 {
+      color: var(--blue);
+      margin: 1rem 0;
     }
   
-    .social-media {
-      align-items: center;
-      display: inline-flex;
-      gap: 1rem;
-      justify-content: space-between;
-      padding-left: 1rem;
-      padding-top: 5rem;
-  
-      img, span {
-        font-size: 3rem;
-        width: 3.5rem;
-      }
-    }
-  
-    .button {
-      margin-top: 5rem;
-      padding: 1.4rem 6rem;
-    }
-  
-
-  
-    @media (width <= 960px) {
-      margin-top: 10%;
-  
-      div {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .social-media {
-        flex-direction:row;
-        margin-bottom: 3rem;
-      }
-
-      .hero-text {
-        h1 {
-          font-size: 5rem;
-        }
-      }
-      
-      .hero-image {
-        display: none;
-      }
-    }
-  
-    @media (width <= 600px) {
-      margin-top: 35%;
-    }
-  
-    @media (width <= 480px) {
-      margin-top: 45%;
+    .small-resume {
+      margin-bottom: 5rem;
     }
   }
+  
+  .social-media {
+    align-items: center;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-top: 5rem;
+  
+    img, span {
+      font-size: 3rem;
+      width: 3.5rem;
+    }
+  }
+  
+  .button {
+    margin-top: 5rem;
+    padding: 1.4rem 6rem;
+  }
+  
+
+  
+  @media (width <= 960px) {
+    margin-top: 10%;
+  
+    div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-media {
+      flex-direction:row;
+      margin-bottom: 3rem;
+    }
+
+    .hero-text {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+      
+    .hero-image {
+      display: none;
+    }
+  }
+  
+  @media (width <= 600px) {
+    margin-top: 35%;
+  }
+  
+  @media (width <= 480px) {
+    margin-top: 45%;
+  }
+}

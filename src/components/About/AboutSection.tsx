@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
+import ScrollAnimation from 'react-animate-on-scroll';
 import nodeIcon from '../../assets/node-icon.svg';
 import reactIcon from '../../assets/react-icon.svg';
 import typescriptIcon from '../../assets/typescript-icon.svg';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import './styles.scss';
 

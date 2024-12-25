@@ -1,125 +1,125 @@
 .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.8rem 10rem;
-    background-color: #14191e59;
-    backdrop-filter: blur(3px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 1000;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: #14191e59;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1.8rem 10rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
 
-    .container-toggle {
-        cursor: pointer;
+  .container-toggle {
+    cursor: pointer;
+  }
+  
+  nav {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 1.8rem;
+
+    a {
+      color: #FFF;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 500;
+      padding: 0.6rem;
+      text-transform: uppercase;
+      transition: filter 0.25s;
+  
+      &.button {
+        padding: 0.6rem 2rem;
       }
+  
+      &:hover {
+        filter: brightness(0.6);
+      }
+    }
+
+  
+
+    .resume-btn {
+      background-color: var(--dark-blue);
+      border-radius: 5px;
+      color: #FFF;
+      padding: 0.6rem 2rem;
+      text-decoration: none;
+    }
+  }
+  
+
+  input[type="checkbox"] {
+    height: 0;
+    outline: none;
+    visibility: hidden;
+    width: 0;
+  }
+  
+  label {
+    background: var(--dark-blue);
+    border-radius: 20px;
+    display: block;
+    height: 30px;
+    margin-left: 5rem;
+    margin-right: auto;
+    position: relative;
+    right: 10px;
+    text-indent: -9999px;
+    width: 55px;
+  
+    &::after {
+      background: #FFF;
+      border-radius: 50%;
+      content: '';
+      height: 20px;
+      left: 4px;
+      position: absolute;
+      top: 5px;
+      transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+      width: 20px;
+    }
+  }
+  
+  input:checked + label {
+    background: var(--purple);
+  
+    &::after {
+      left: calc(100% - 5px);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @media (width <= 960px) {
+    padding: 1.8rem 3rem;
+
   
     nav {
-      display: flex;
       align-items: center;
-            gap: 1.8rem;
-      cursor: pointer;
-
-      a {
-        color: #FFF;
-        padding: 0.6rem;
-        font-family: 'Red Hat Display', sans-serif;
-            font-weight: 500;
-        text-transform: uppercase;
-        transition: filter 0.25s;
-  
-        &.button {
-          padding: 0.6rem 2rem;
-        }
-  
-        &:hover {
-          filter: brightness(0.6);
-        }
-      }
-
-  
-
-      .resume-btn {
-        padding: 0.6rem 2rem;
-        background-color: var(--dark-blue);
-        color: #FFF;
-        border-radius: 5px;
-        text-decoration: none;
-      }
-    }
-  
-
-    input[type="checkbox"] {
-      height: 0;
-      width: 0;
-      visibility: hidden;
-      outline: none;
-    }
-  
-    label {
-      text-indent: -9999px;
-      width: 55px;
-      height: 30px;
       background: var(--dark-blue);
-      display: block;
-      border-radius: 20px;
-      position: relative;
-      right: 10px;
-      margin-left: 5rem;
-      margin-right: auto;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      left: 0;
+      opacity: 0;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      transition: opacity 0.25s;
+      visibility: hidden;
+      width: 100vw;
   
-      &::after {
-        content: '';
-        background: #FFF;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        position: absolute;
-        top: 5px;
-        left: 4px;
-        transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
-      }
-    }
-  
-    input:checked + label {
-      background: var(--purple);
-  
-      &::after {
-        left: calc(100% - 5px);
-        transform: translateX(-100%);
-      }
-    }
-  
-    @media (width <= 960px) {
-      padding: 1.8rem 3rem;
-
-  
-      nav {
-        overflow: hidden;
-        opacity: 0;
-        visibility: hidden;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background: var(--dark-blue);
-        top: 0;
-        left: 0;
-        transition: opacity 0.25s;
-  
-        &.active {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-  
-    @media (width <= 800px) {
-      label {
-        position: relative;
+      &.active {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
+  
+  @media (width <= 800px) {
+    label {
+      position: relative;
+    }
+  }
+}

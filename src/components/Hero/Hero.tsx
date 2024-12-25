@@ -2,9 +2,9 @@ import { BrowserRouter } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import linkedin from '../../assets/linkedin.svg';
 import githubIcon from '../../assets/github.svg';
+import { HeroImage } from '../HeroImage';
 
 import './styles.scss';
-import { HeroImage } from '../HeroImage';
 
 const Hero = () => (
   <div id="home" className="hero-container">
