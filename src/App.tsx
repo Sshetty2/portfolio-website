@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Header } from './components/Header';
 import Particles from 'react-tsparticles';
+import { Header } from './components/Header';
 import { getParticlesProps } from './particlesProps';
 import { HeroSection } from './components/Hero';
 import { AboutSection } from './components/About';

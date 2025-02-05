@@ -1,10 +1,18 @@
+import ScrollAnimation from 'react-animate-on-scroll';
 import githubIcon from '../../assets/github.svg';
 import externalLink from '../../assets/external-link.svg';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import './styles.scss';
 
 const projects = [
+  {
+    title      : 'World Impact Analyzer',
+    // eslint-disable-next-line max-len
+    description: 'A Next.js application that analyzes the historical and societal impact of notable figures using OpenAI\'s GPT-4o model and Wikipedia data. The tool integrates LangChain for contextual data retrieval, AWS Lambda for serverless execution, and Neon Postgres for efficient data storage and caching. Users can input a name, and the system generates an AI-powered analysis based on structured Wikipedia content and sentiment trends.',
+    tech       : ['Next.js', 'Tailwind', 'OpenAI API', 'LangChain', 'AWS Lambda', 'Neon Postgres', 'Wikipedia API'],
+    githubLink : 'https://github.com/Sshetty2/world-impact-analyzer',
+    projectLink: 'https://world-impact-analyzer.vercel.app/'
+  },
   {
     title      : 'Wiki Sentiment Analyzer',
     // eslint-disable-next-line max-len
@@ -28,14 +36,6 @@ const projects = [
     tech       : ['React', 'TypeScript', 'Redux', 'Material-UI', 'Chrome Extension API', 'OAuth2', 'GraphQL'],
     githubLink : 'https://github.com/Sshetty2/meetup-batch-event-set',
     projectLink: 'https://chromewebstore.google.com/detail/meetup-batch-event-set-to/cabfodbfjmgloaallchcnnkgcfpnobem'
-  },
-  {
-    title      : 'WebTrader - Stock Trading Simulator',
-    // eslint-disable-next-line max-len
-    description: 'A full-stack web application that simulates stock market trading with virtual currency. Users can buy/sell stocks, check real-time prices, view their trade history, and manage their virtual portfolio. Features include user authentication, virtual fund deposits, and transaction history tracking. Built with Flask for the backend and Bootstrap for responsive frontend design, providing a realistic trading experience without financial risk.',
-    tech       : ['Python', 'Flask', 'HTML/CSS', 'Bootstrap', 'SQLite', 'Gunicorn', 'Stock Market APIs'],
-    githubLink : 'https://github.com/Sshetty2/webtrader',
-    projectLink: 'https://webtrader-9ap8.onrender.com'
   }
 ];
 

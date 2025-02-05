@@ -438,7 +438,6 @@ export default [{
     'prefer-template'        : 2,
     'require-yield'          : 2,
     'rest-spread-spacing'    : ['error', 'never'],
-    'sort-imports'           : 0,
     'symbol-description'     : 2,
     'template-curly-spacing' : ['error', 'never'],
     'yield-star-spacing'     : ['error', 'after'],
@@ -446,6 +445,7 @@ export default [{
     'no-undef'               : 'off',
     'no-unused-vars'         : 'off',
     'max-lines'              : 'off',
+    'sort-imports'           : 0,
     'import/order'           : [
       1,
       {
