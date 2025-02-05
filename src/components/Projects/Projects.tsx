@@ -14,12 +14,12 @@ const projects = [
     projectLink: 'https://world-impact-analyzer.vercel.app/'
   },
   {
-    title      : 'Wiki Sentiment Analyzer',
+    title      : 'SQL Query Assistant',
     // eslint-disable-next-line max-len
-    description: 'A React application that visualizes emotional sentiments from Wikipedia articles using IBM Watson\'s Natural Language Understanding model. The application processes Wikipedia content through AWS Lambda functions to analyze emotional sentiment patterns and presents the data through interactive visualizations.',
-    tech       : ['React', 'Typescript', 'MUI', 'IBM Watson', 'AWS Lambda', 'API Gateway', 'Wikipedia API'],
-    githubLink : 'https://github.com/Sshetty2/wiki-sentiment-analysis',
-    projectLink: 'https://www.wiki-sentiment-analyzer.wiki/'
+    description: 'A natural language to SQL query interface that leverages LangChain and OpenAI to convert plain English into executable SQL queries. Features an interactive Streamlit frontend for intuitive database exploration, real-time query execution, and result visualization. The system includes smart error handling, query templating, and supports custom parameters like sort orders and time-based filtering. Built with a FastAPI backend for scalability and Docker support for easy deployment.',
+    tech       : ['Python', 'LangChain', 'OpenAI API', 'Streamlit', 'FastAPI', 'Docker', 'SQL Server', 'SQLite'],
+    githubLink : 'https://github.com/Sshetty2/sql-query-assistant',
+    projectLink: 'https://sql-query-assistant-ql4c.onrender.com/'
   },
   {
     title      : 'Demo Blotter App',
