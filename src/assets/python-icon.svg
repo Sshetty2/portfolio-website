@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="python-gradient-1" x1="811.527" y1="574.895" x2="665.255" y2="573.732" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#366a96"/>
+      <stop offset="1" style="stop-color:#3679b0"/>
+    </linearGradient>
+    <linearGradient id="python-gradient-2" x1="862.824" y1="642.176" x2="573.276" y2="642.176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#ffc836"/>
+      <stop offset="1" style="stop-color:#ffe873"/>
+    </linearGradient>
+  </defs>
+  <path d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07v3.19h6.752v1H6.545S2 8.8 2 16.005s4.013 6.912 4.013 6.912H8.33v-3.361s-.235-4.013 3.942-4.013h6.652s3.815.06 3.815-3.676V5.765s.587-3.665-6.854-3.665zm-3.719 2.131a1.214 1.214 0 11-1.214 1.214 1.214 1.214 0 011.214-1.214z" style="fill:url(#python-gradient-1)"/>
+  <path d="M16.085 29.91c7.1 0 6.651-3.08 6.651-3.08v-3.18h-6.751v-1h9.441S30 23.158 30 15.995s-4.013-6.912-4.013-6.912H23.67V12.4s.235 4.013-3.943 4.013H13.075s-3.815-.06-3.815 3.676v6.107s-.586 3.714 6.825 3.714zm3.719-2.131a1.214 1.214 0 111.214-1.214 1.214 1.214 0 01-1.214 1.214z" style="fill:url(#python-gradient-2)"/>
+</svg>

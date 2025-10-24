@@ -1,8 +1,9 @@
 .hero-image {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex: 1;
   justify-content: center;
+  margin-top: 15vh;
 
   svg {
     max-width: 500px;
@@ -10,6 +11,7 @@
   }
 
   @media (width <= 960px) {
+    margin-top: 0;
     max-width: 400px;
 
     svg {

@@ -4,6 +4,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import nodeIcon from '../../assets/node-icon.svg';
 import reactIcon from '../../assets/react-icon.svg';
 import typescriptIcon from '../../assets/typescript-icon.svg';
+import pythonIcon from '../../assets/python-icon.svg';
+import csharpIcon from '../../assets/csharp-icon.svg';
+import javaIcon from '../../assets/java-icon.svg';
+import awsIcon from '../../assets/aws-icon.svg';
+import dockerIcon from '../../assets/docker-icon.svg';
+import postgresqlIcon from '../../assets/postgresql-icon.svg';
 
 import './styles.scss';
 
@@ -29,18 +35,47 @@ const AboutSection = () => (
       <div className="hard-skills">
         <div className="icon">
           <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={pythonIcon} alt="Python" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={csharpIcon} alt="C#" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={javaIcon} alt="Java" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={typescriptIcon} alt="TypeScript" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
             <img src={reactIcon} alt="React" />
           </ScrollAnimation>
         </div>
         <div className="icon">
           <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={typescriptIcon} alt="Typescript" />
+            <img src={nodeIcon} alt="Node.js" />
           </ScrollAnimation>
         </div>
-
         <div className="icon">
           <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={nodeIcon} alt="Node" />
+            <img src={awsIcon} alt="AWS" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={dockerIcon} alt="Docker" />
+          </ScrollAnimation>
+        </div>
+        <div className="icon">
+          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
+            <img src={postgresqlIcon} alt="PostgreSQL" />
           </ScrollAnimation>
         </div>
       </div>
