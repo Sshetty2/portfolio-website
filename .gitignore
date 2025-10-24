@@ -33,3 +33,6 @@ amplifyconfiguration*
 
 #eslint
 .eslintcache
+
+CLAUDE.md
+/.claude
