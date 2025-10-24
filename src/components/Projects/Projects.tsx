@@ -18,18 +18,37 @@ function isValidURL (string: string) {
 
 const projects = [
   {
-    title      : 'World Impact Analyzer',
+    title      : 'CPE Matching Agent for Cyber Security',
     // eslint-disable-next-line max-len
-    description: 'A Next.js application that analyzes the historical and societal impact of notable figures using OpenAI\'s GPT-4o model and Wikipedia data. The tool integrates LangChain for contextual data retrieval, AWS Lambda for serverless execution, and Neon Postgres for efficient data storage and caching. Users can input a name, and the system generates an AI-powered analysis based on structured Wikipedia content and sentiment trends.',
-    tech       : ['Next.js', 'Tailwind', 'OpenAI API', 'LangChain', 'AWS Lambda', 'Neon Postgres', 'Wikipedia API'],
-    githubLink : 'https://github.com/Sshetty2/world-impact-analyzer',
-    projectLink: 'https://world-impact-analyzer.vercel.app/'
+    description: 'An intelligent agent system designed for vulnerability management that matches software configurations to CPEs (Common Platform Enumerations) through a sophisticated multi-stage workflow. Built with LangGraph for graph-based execution orchestration, the system combines vector database search for semantic matching, smart filtering algorithms to narrow candidates, and LLM-powered reasoning for final CPE selection. The agent handles complex edge cases, validates matches against CPE dictionaries, and provides confidence scoring. Deployed in a production Cyber Security environment to automate vulnerability identification workflows.',
+    tech       : [
+      'Python',
+      'LangChain',
+      'LangGraph',
+      'OpenAI API',
+      'Vector Database',
+      'FastAPI',
+      '.NET/C#',
+      'PostgreSQL'
+    ],
+    githubLink : 'https://github.com/Sshetty2',
+    projectLink: 'Enterprise Application (Private)'
   },
   {
-    title      : 'SQL Query Assistant',
+    title      : 'SQL Query Assistant with Agentic Workflow',
     // eslint-disable-next-line max-len
-    description: 'A natural language to SQL query interface that leverages LangChain and OpenAI to convert plain English into executable SQL queries. Features an interactive Streamlit frontend for intuitive database exploration, real-time query execution, and result visualization. The system includes smart error handling, query templating, and supports custom parameters like sort orders and time-based filtering. Built with a FastAPI backend for scalability and Docker support for easy deployment.',
-    tech       : ['Python', 'LangChain', 'OpenAI API', 'Streamlit', 'FastAPI', 'Docker', 'SQL Server', 'SQLite'],
+    description: 'A natural language to SQL query interface powered by an agentic workflow architecture. The system uses LangGraph to orchestrate a multi-stage reasoning pipeline: semantic search via vector embeddings identifies relevant schema context, intelligent filtering narrows down applicable tables and columns, and LLM reasoning generates optimized SQL queries with proper joins and conditions. Features include automatic query validation, error recovery with self-correction, and support for complex operations like aggregations and time-based filtering. Built with FastAPI for production scalability and Streamlit for interactive exploration.',
+    tech       : [
+      'Python',
+      'LangChain',
+      'LangGraph',
+      'OpenAI API',
+      'Vector Search',
+      'Streamlit',
+      'FastAPI',
+      'Docker',
+      'SQL Server'
+    ],
     githubLink : 'https://github.com/Sshetty2/sql-query-assistant',
     projectLink: 'https://sql-query-assistant-ql4c.onrender.com'
   },
@@ -49,6 +68,14 @@ const projects = [
     ],
     githubLink : 'https://github.com/Sshetty2/vulnerability-mitigation-assistant',
     projectLink: 'https://vulnerability-mitigation-assistant.onrender.com'
+  },
+  {
+    title      : 'World Impact Analyzer',
+    // eslint-disable-next-line max-len
+    description: 'A Next.js application that analyzes the historical and societal impact of notable figures using OpenAI\'s GPT-4o model and Wikipedia data. The tool integrates LangChain for contextual data retrieval, AWS Lambda for serverless execution, and Neon Postgres for efficient data storage and caching. Users can input a name, and the system generates an AI-powered analysis based on structured Wikipedia content and sentiment trends.',
+    tech       : ['Next.js', 'Tailwind', 'OpenAI API', 'LangChain', 'AWS Lambda', 'Neon Postgres', 'Wikipedia API'],
+    githubLink : 'https://github.com/Sshetty2/world-impact-analyzer',
+    projectLink: 'https://world-impact-analyzer.vercel.app/'
   },
   {
     title      : 'Prompt Buddy - AI Prompt Enhancement Extension',
@@ -114,7 +141,7 @@ const Project = ({ projectLink, githubLink, title, description, tech }: ProjectP
           ) : (
             <Tooltip title="Coming Soon">
               <a
-                onClick={e => e.preventDefault()}
+                onClick={event => event.preventDefault()}
                 style={{ cursor: 'not-allowed' }}
                 target="_blank"
                 rel="noreferrer"
@@ -136,7 +163,7 @@ const Project = ({ projectLink, githubLink, title, description, tech }: ProjectP
 
 const Projects = () => (
   <div id="projects" className="projects-container">
-    <h2>Demo Projects</h2>
+    <h2>Featured Projects</h2>
     <div className="projects">
       {projects.map(project => <Project key={project.title} {...project} />)}
     </div>

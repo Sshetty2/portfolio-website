@@ -15,14 +15,16 @@ const AboutSection = () => (
       </ScrollAnimation>
       <ScrollAnimation className="animation-delay" animateIn="fadeInLeft" >
         <p>
-            Hi there! 👋 Welcome to my digital portfolio. I'm Sachit, a seasoned software engineer with a passion for crafting innovative enterprise solutions, exploring the transformative power of AI, and leveraging the full potential of cloud computing with AWS.
+            Hi there! 👋 I'm Sachit, a full-stack software engineer specializing in building intelligent, agentic AI systems that leverage the power of generative AI to solve complex real-world problems.
         </p>
         <p>
-          My expertise spans cutting-edge development, scalable architecture design, and integrating AI-driven solutions into real-world applications.</p>
+          With 7+ years of experience across diverse domains—including Cyber Security and Financial Services—I've developed expertise in multiple technology stacks: C# and .NET, Java-based enterprise systems, Python for scripting and API development, and Node.js for scalable backend services.
+        </p>
         <p>
-          With a strong foundation in enterprise software development, I’ve built robust, scalable, and user-focused applications that deliver tangible business value. My understanding of artificial intelligence concepts empowers me to design intelligent systems that solve complex problems, enhance user experiences, and drive efficiency.</p>
+          My current focus is on designing and implementing sophisticated AI agent workflows that combine LLMs, vector databases, graph-based execution (LangGraph), and multi-stage reasoning pipelines. From CPE matching agents for vulnerability management to natural language query systems, I build tools that transform how teams interact with complex data and processes.
+        </p>
         <p>
-          Feel free to explore my projects, connect with me on LinkedIn, or drop me a message to discuss how I can help you bring your next big idea to life!</p>
+          I bring together traditional software engineering excellence with cutting-edge AI capabilities—creating solutions that are not just intelligent, but reliable, scalable, and production-ready. Let's connect and explore how agentic AI can transform your next project!</p>
       </ScrollAnimation>
       <div className="hard-skills">
         <div className="icon">

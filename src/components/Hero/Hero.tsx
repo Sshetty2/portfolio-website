@@ -13,7 +13,7 @@ const Hero = () => (
         <h1>Sachit Shetty</h1>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp" >
-        <h3>Fullstack Software Engineer</h3>
+        <h3>Full-Stack Engineer & AI Systems Architect</h3>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp">
         <p className="small-resume">7+ Years of Experience</p>
