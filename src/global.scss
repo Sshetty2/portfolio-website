@@ -130,7 +130,7 @@ html {
 
 .main-container {
   overflow-x: hidden;
-  padding: 0 10rem;
+  padding: 0 8rem;
   position: relative;
   z-index: 0;
 
@@ -143,11 +143,15 @@ html {
     z-index: -1;
   }
 
-  @media (width <= 740px) {
-    padding: 0 4rem;
+  @media (width <= 960px) {
+    padding: 0 5rem;
   }
 
-  @media (width <= 360px) {
+  @media (width <= 640px) {
+    padding: 0 3rem;
+  }
+
+  @media (width <= 480px) {
     padding: 0 2rem;
   }
 }

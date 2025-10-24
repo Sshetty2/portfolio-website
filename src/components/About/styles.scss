@@ -1,64 +1,60 @@
 .about-container {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  
-  .hard-skills {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8rem;
-    margin-top: 1.6rem;
-  }
-  
-  .icon {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  
-    img {
-      width: 3.4rem;
-    }
-  }
-  
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6rem;
+
   h2 {
     color: var(--blue);
-    display: inline-block;
     font-size: 3rem;
     margin-bottom: 2rem;
     margin-top: 0;
   }
-  
+
   h3 {
     color: var(--blue);
     margin-top: 2rem;
   }
-  
+
   p {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
-  
+
   .about-text {
     backdrop-filter: blur(3px);
     background-color: #14191e59;
     border-radius: 1rem;
-    margin-left: 3rem;
+    min-width: 0;
     padding: 2rem;
   }
-  
+
   .about-image {
     text-align: center;
-  
+
     img {
-      filter: grayscale(0);
-      margin-top: 2rem;
+      max-width: 100%;
       transition: filter 0.5s;
       width: 75%;
-  
-      &:hover {
-        filter: grayscale(0);
+    }
+  }
+
+  .hard-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 1.6rem;
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 3.4rem;
       }
     }
   }
@@ -70,47 +66,54 @@
   .animation-delay-icon {
     animation-delay: 1000ms;
   }
-  
-  @media only screen and (width <= 480px) {
-    .about-image {
-      margin-top: 4rem;
-      max-width: 100%;
-  
-      img {
-        filter: grayscale(0);
-        margin-top: 2rem;
-        transition: filter 0.5s;
-        width: 100%;
-  
-        &:hover {
-          filter: grayscale(0);
-        }
-      }
-    }
-  }
-  
+
   @media (width <= 960px) {
     display: block;
+    margin-top: 4rem;
     text-align: center;
-  
+
+    .about-text {
+      margin-bottom: 2rem;
+    }
+
     .hard-skills {
       justify-content: center;
     }
-  
-    .about-image {
-      display: flex;
-      max-width: 100%;
-  
-      img {
-        filter: grayscale(0);
-        margin-top: 2rem;
-        transition: filter 0.5s;
-        width: 100%;
-  
-        &:hover {
-          filter: grayscale(0);
-        }
-      }
+
+    .about-image img {
+      width: 100%;
+    }
+  }
+
+  @media (width <= 640px) {
+    margin-top: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    .about-text {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (width <= 480px) {
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .about-text {
+      padding: 1.2rem;
     }
   }
 }

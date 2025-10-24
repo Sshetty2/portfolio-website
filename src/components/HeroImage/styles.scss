@@ -1,23 +1,35 @@
 .hero-image {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    margin-right: 5rem;
-    margin-top: 3rem;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  svg {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  @media (width <= 960px) {
+    max-width: 400px;
 
     svg {
-        max-width: 500px;
+      max-width: 350px;
     }
+  }
 
-    @media (width <= 960px) {
-        margin-top: 15%;
-    }
+  @media (width <= 640px) {
+    max-width: 300px;
 
-    @media (width <= 600px) {
-        margin-top: 35%;
+    svg {
+      max-width: 280px;
     }
+  }
 
-    @media (width <= 480px) {
-        margin-top: 45%;
+  @media (width <= 480px) {
+    max-width: 250px;
+
+    svg {
+      max-width: 220px;
     }
+  }
 }
