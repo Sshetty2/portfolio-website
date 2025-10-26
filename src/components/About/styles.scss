@@ -88,6 +88,10 @@
     animation-delay: 1000ms;
   }
 
+  @media (width >= 1125px) {
+    margin-top: -25rem;
+  }
+
   @media (width <= 1200px) {
     gap: 2.5rem;
 
