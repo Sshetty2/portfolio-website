@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
-import ScrollAnimation from 'react-animate-on-scroll';
 import nodeIcon from '../../assets/node-icon.svg';
 import reactIcon from '../../assets/react-icon.svg';
 import typescriptIcon from '../../assets/typescript-icon.svg';
@@ -16,10 +15,8 @@ import './styles.scss';
 const AboutSection = () => (
   <div className="about-container">
     <div className="about-text">
-      <ScrollAnimation animateIn="fadeInLeft">
-        <h2>About me</h2>
-      </ScrollAnimation>
-      <ScrollAnimation className="animation-delay" animateIn="fadeInLeft" >
+      <h2>About me</h2>
+      <div>
         <p>
             Hi there! 👋 I'm Sachit, a full-stack software engineer specializing in building intelligent, agentic AI systems that leverage the power of generative AI to solve complex real-world problems.
         </p>
@@ -31,58 +28,38 @@ const AboutSection = () => (
         </p>
         <p>
           I bring together traditional software engineering excellence with cutting-edge AI capabilities—creating solutions that are not just intelligent, but reliable, scalable, and production-ready. Let's connect and explore how agentic AI can transform your next project!</p>
-      </ScrollAnimation>
+      </div>
       <div className="hard-skills">
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={pythonIcon} alt="Python" />
-          </ScrollAnimation>
+          <img src={pythonIcon} alt="Python" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={csharpIcon} alt="C#" />
-          </ScrollAnimation>
+          <img src={csharpIcon} alt="C#" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={javaIcon} alt="Java" />
-          </ScrollAnimation>
+          <img src={javaIcon} alt="Java" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={typescriptIcon} alt="TypeScript" />
-          </ScrollAnimation>
+          <img src={typescriptIcon} alt="TypeScript" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={reactIcon} alt="React" />
-          </ScrollAnimation>
+          <img src={reactIcon} alt="React" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={nodeIcon} alt="Node.js" />
-          </ScrollAnimation>
+          <img src={nodeIcon} alt="Node.js" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={awsIcon} alt="AWS" />
-          </ScrollAnimation>
+          <img src={awsIcon} alt="AWS" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={dockerIcon} alt="Docker" />
-          </ScrollAnimation>
+          <img src={dockerIcon} alt="Docker" />
         </div>
         <div className="icon">
-          <ScrollAnimation className="animation-delay-icon" animateIn="fadeInUp">
-            <img src={postgresqlIcon} alt="PostgreSQL" />
-          </ScrollAnimation>
+          <img src={postgresqlIcon} alt="PostgreSQL" />
         </div>
       </div>
     </div>
     <div className="about-image">
-      <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
-      </ScrollAnimation>
     </div>
   </div>
 );

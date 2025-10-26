@@ -10,6 +10,10 @@
     width: 100%;
   }
 
+  @media (width <= 1200px) {
+    margin-top: 10vh;
+  }
+
   @media (width <= 960px) {
     margin-top: 0;
     max-width: 400px;
