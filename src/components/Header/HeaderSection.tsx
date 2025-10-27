@@ -1,7 +1,9 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import { useState } from 'react';
-import Resume from '../../assets/sshetty_resume.pdf';
+
+// import Resume from '../../assets/sshetty_resume.pdf';
+
 import './styles.scss';
 
 const HeaderSection = ({ toggleTheme }: { toggleTheme: () => void }) =>{
@@ -32,7 +34,7 @@ const HeaderSection = ({ toggleTheme }: { toggleTheme: () => void }) =>{
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a href={Resume} download className="resume-btn">Resume</a>
+          {/* <a href={Resume} download className="resume-btn">Resume</a> */}
         </nav>
         <div
           aria-expanded={isActive}
